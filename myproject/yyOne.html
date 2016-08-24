@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>yyOne</title>
+		<link rel="stylesheet" href="css/yyOne.css" >
+		</style>
+		<script type="text/javascript" src="js/base.js" ></script>
+		<script src="js/api.js" ></script>
+
+		<script>
+			window.onload = function() {
+				var tab = new yy.api.Tab('nav', {
+					arrow: true,
+					events: ['onmousedown'],
+					con: true,
+					banner: true,
+					animation: true,
+					music: true
+				});
+
+				yy.api.home(); //调用第一屏的方法;
+				yy.api.screenTwo(); //调用第二屏的方法;
+				yy.api.screenThree(); //调用第三屏的方法;
+				yy.api.screenFour(); //调用第四屏的方法;
+				yy.api.screenFive(); //调用第五屏的方法;
+			}
+		</script>
+	</head>
+
+	<body>
+		<div id="main">
+			<div id="load">
+				<div class="up"></div>
+				<div class="down"></div>
+				<span></span>
+
+			</div>
+			<div id="header">
+				<div id="header-main" class="clear">
+					<a href="#" id="logo" class="fl">
+						<img src="yyOneimg/logo.png">
+					</a>
+					<div id="music">
+						<audio id="audio" src="yyOneimg/dream.mp3" preload="auto" loop></audio>
+					</div>
+					<ul class="fr" id="nav">
+						<li>
+							<a href="javascript:;">
+								<div class="above"><img src="yyOneimg/home_gruen.png" ></div>
+								<div><img src="yyOneimg/home.png" ></div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<div class="above">Course</div>
+								<div>Course</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<div class="above">Works</div>
+								<div>Works</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<div class="above">About</div>
+								<div>About</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<div class="above">Team</div>
+								<div>Team</div>
+							</a>
+						</li>
+					</ul>
+					<div class="arrow">
+
+					</div>
+				</div>
+			</div>
+			<div class="content" id="content">
+				<ul id="nav-list">
+					<li class="active"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+
+				</ul>
+				<ul class="content-main">
+					<li class="con-list" id="home">
+
+						<div class="divList" id="sOne">
+							<ul class="movePic">
+								<li class="specil"><img src="yyOneimg/home1.jpg"></li>
+								<li><img src="yyOneimg/home2.jpg"></li>
+								<li><img src="yyOneimg/home3.jpg" ></li>
+								<li><img src="yyOneimg/home4.jpg"></li>
+								<li><img src="yyOneimg/home5.jpg"></li>
+							</ul>
+							<ul class="changeBtn">
+								<li class="active"></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+
+						</div>
+					</li>
+					<li class="con-list" id="page">
+
+						<div class="divList">
+							<h2 class="introduce">
+								<span>EINIGE</span><br/>
+								<span>UNSERER</span><br/>
+								<span>KUNDEN</span>
+							</h2>
+							<p class="text">
+								Das Kundenvertrauen in unsere Kompetenz ist die notwendige Basis einer erfolgreichen Zusammenarbeit, gleichzeitig aber auch das größte Lob, das man uns entgegenbringen kann.<br/> Diese und viele weitere große und kleine Kunden vertrauen uns seit Jahren, was uns stolz macht, und dafür sagen wir an dieser Stelle einfach mal.
+							</p>
+
+							<!--<div class="logo-show">
+								<div class="lines"></div>
+								<div class="lines" ></div>
+								<div class="lines" ></div>
+								<div class="lines" ></div>
+								<div class="lines" ></div>
+								<div class="logopic">
+									<div class="rBefore"></div>
+									<div class="rAfter">111</div>
+									
+								</div>
+								<div class="logopic">
+									<div class="rBefore"></div>
+									<div class="rAfter">222</div>
+								</div>
+								<div class="logopic">
+									<div class="rBefore"></div>
+									<div class="rAfter">222</div>
+								</div>
+								<div class="logopic">
+									<div class="rBefore"></div>
+									<div class="rAfter">444</div>
+								</div>
+								<div class="logopic">
+									<div class="rBefore"></div>
+									<div class="rAfter">555</div>
+								</div>
+								<div class="logopic">
+									<div class="rBefore"></div>
+									<div class="rAfter">666</div>
+								</div>
+								<div class="logopic">
+									<div class="rBefore"></div>
+									<div class="rAfter">777</div>
+								</div>
+								<div class="logopic">
+									<div class="rBefore"></div>
+									<div class="rAfter">888</div>
+								</div>
+								<div class="logopic">
+									<div class="rBefore"></div>
+									<div class="rAfter">999</div>
+								</div>
+								<div class="logopic">
+									<div class="rBefore"></div>
+									<div class="rAfter">1010</div>
+								</div>
+								<div class="logopic">
+									<div class="rBefore"></div>
+									<div class="rAfter">1111</div>
+								</div>
+								<div class="logopic">
+									<div class="rBefore"></div>
+									<div class="rAfter">1212</div>
+								</div>
+
+							</div>-->
+							<div class="plane1"></div>
+							<div class="plane2"></div>
+							<div class="plane3"></div>
+						</div>
+					</li>
+					<li class="con-list" id="sky">
+						<div class="divList">
+							<h2 class="introduce">
+								<span>EINBLICK</span><br/>
+								<span>ERKENNTNIS</span><br/>
+								<span>ERGEBNIS</span>
+							</h2>
+							<ul class="picChange">
+								<!--需要动态生成-->
+								<!--<li>
+									<img src="yyOneimg/sky1.jpg" class="pic"/>
+									<div class="mask">
+										<span>keyframes</span>
+										<div></div>
+									</div>
+								</li>
+								<li>
+								    <img src="yyOneimg/sky2.jpg" class="pic"/>
+									<div class="mask">
+										<span>animation</span>
+										<div></div>
+									</div>
+								</li>
+								<li>
+									<img src="yyOneimg/sky3.jpg" class="pic"/>
+									<div class="mask">
+										<span>transform</span>
+										<div></div>
+									</div>
+								</li>
+								<li>
+									<img src="yyOneimg/sky4.jpg" class="pic"/>
+									<div class="mask">
+										<span>rotate translate transition</span>
+										<div></div>
+									</div>
+								</li>-->
+							</ul>
+							<div id="robot">
+
+							</div>
+							<div class="pencil1"></div>
+							<div class="pencil2"></div>
+							<div class="pencil3"></div>
+						</div>
+					</li>
+					<li class="con-list" id="cell">
+						<div class="blueLine"></div>
+						<div class="divList">
+							<h2 class="introduce">
+								<span>DIE</span><br/>
+								<span>SPEZIELLE</span><br/>
+								<span>VIELFALT</span>
+						</h2>
+							<p class="text">
+								Der bunte Medienmix ist die Faszination die uns antreibt und das, was man an uns schätzt. Von A bis Z und von vorne bis hinten nehmen wir Ihr Projekt unter unsere Fittiche und lassen es zu etwas Großartigem heranwachsen.
+							</p>
+							<div class="slicePic">
+								<div class="cellImg">
+
+									<ul data-src="yyOneimg/cell1.jpg" >
+
+									</ul>
+									<div class="showPic">
+										<img src="yyOneimg/cell2.jpg"  />
+									</div>
+								</div>
+								<div class="cellImg">
+
+									<ul data-src="yyOneimg/cell3.jpg" >
+
+									</ul>
+									<div class="showPic">
+										<img src="yyOneimg/cell4.jpg"  />
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</li>
+					<li class="con-list" id="Team">
+
+						<div class="divList">
+							<h2 class="introduce">
+								<span>WIR SIND</span><br/>
+								<span>VOXELAIR</span>
+							</h2>
+							<p class="text">
+								Wir sind seit 2002 eine Full-Service-Werbeagentur mit Stammsitz in Heimsheim, zwischen Stuttgart und Karlsruhe. Über 60 Jahre Erfahrung vereinen das gesamte VoxelAir-Team. Dabei hat jedes Voxel neben.
+							</p>
+							<div class="content">
+								<!--<ul>
+						    	<li></li>
+						    	<li></li>
+						    	<li></li>
+						    	<li></li>
+						    	<li></li>
+						    	<li></li>
+						    	<li></li>
+						    	<li></li>
+						    </ul>-->
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+
+</html>
