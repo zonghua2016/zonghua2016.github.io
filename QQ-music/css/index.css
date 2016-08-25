@@ -1,0 +1,354 @@
+@charset "utf-8";
+/* reset.css */
+body,dl,dd,ul,ol,h1,h2,h3,h4,h5,h6,form,input,th,td,p{margin:0;padding:0;}
+table{border-collapse:collapse;}
+img{border:none; vertical-align:top;}
+li{list-style:none}
+a{text-decoration:none}
+em{font-style:normal;}
+strong{ font-weight:normal;}
+textarea{ resize:none; overflow:auto;}
+input,textarea,select,lable{ outline:none; border:none;}
+.clear{zoom:1;}
+.clear:after{content:"";display:block;clear:both;}
+/* end reset.css */
+
+/* public.css*/
+body{ min-width:960px;width:100%;}
+.wrap{ width:960px; margin:0 auto;}
+#top-menu{background:#2f2f2f;}
+#top-menu .wrap{height:30px;}
+.top-list{float:left;}
+.top-list li{float: left; height: 22px;padding-top: 8px;margin-left:10px; display: inline;}
+.top-list li a{font:12px/12px arial,"微软雅黑";color:#b5b5b5;border-right:1px solid #3d3d3d;padding-right:9px;display:block;}
+.top-list li a:hover{ color:#0dad51;}
+.top-list .left-float a{width: 24px; float: left; padding-left: 6px;}
+.top-list .left-float span{ background: url("../img/public.gif")/*tpa=http://2013.miaov.com/student/css2015/wangmingxiao/QQ-music/img/public.gif*/ no-repeat 2px 2px;width: 16px;height: 12px;display: block; float: left;}
+#top-menu .green{ margin-left:10px;width: 13px;height: 10px;}
+#top-menu .wrap h4{ padding-left:573px;float:left; font:12px/29px arial,"微软雅黑"; color:#8b8b8b;}
+#qqmusic{height:113px; border-bottom:1px solid #ddd;}
+#header{width:960px;margin:0 auto;position:relative; height: 113px;}
+#header .header-logo{width: 240px;float: left; padding-top: 1px;}
+#header .header-logo a{display:block;width:240px; height:54px;padding-top:31px; float:left;  background: url("../img/public.gif")/*tpa=http://2013.miaov.com/student/css2015/wangmingxiao/QQ-music/img/public.gif*/ no-repeat 0 -10px;}
+#header .header-navT{width:498px;float:left;}
+#header .header-navT li{ float:left; margin-right:8px;height:75px;  text-align:center;}
+#header .header-navT a{ color:#5d5d5d;font:16px/36px arial,"微软雅黑";padding-top:39px; height:36px; display:block;}
+#header .header-navT a:hover{ border-top:5px solid #0dad51; padding-top:34px;display:block;}
+.header-navT .Music{width:88px;}
+.header-navT .MV{width:58px;}
+.header-navT .mymusic{width:87px;}
+.header-navT .download{width:110px;}
+.header-search{position: absolute;left:738px;top:0;background:#f0f0f0;margin-top: 38px; border-radius:8px; padding:4px;height:31px; width:220px;zoom:1;}
+.header-search .corner{ border:1px solid #c3c3c3;border-radius:4px;height:29px; width:218px; background:#fff;}
+.header-search .text{ background:#fff; float:left; width:176px; height:20px; margin-left:10px; margin-top:5px; display:inline; color:#c3c3c3; font:12px/20px "宋体";}
+.header-search .btn{ background:url("../img/public.gif")/*tpa=http://2013.miaov.com/student/css2015/wangmingxiao/QQ-music/img/public.gif*/ no-repeat 0 -265px; float:left; width:28px; height:29px;}
+.header-navB{ float:left; width:720px;}
+.header-navB p{ float:left;}
+.header-navB span{ font:12px arial; color:#cfc5cf;}
+.header-navB a{ font:14px/36px arial; padding:0 15px; color:#6e6e6e;}
+#header .header-navB .home a{ color:#0dad51; font-weight: bold; margin-left: 7px;}
+#header .header-navB .home a:hover{color: #05b600;}
+.header-navB a:hover{ color:#000;}
+#footer{background:#f7f7f7; height:312px; margin:93px 0 10px;}
+#cfooter{margin-top:37px;background:#f7f7f7; height:312px;}
+#footer a:hover{ color: #000;}
+#footer-content{ width:960px;padding-top:29px; padding-left:109px; height:110px; margin:0 auto;}
+.download{ width:275px; float:left; margin-right:60px;margin-left: 8px; display:inline;}
+.download dt{ font:bold 16px/32px tahoma; color:#757575; width:275px; margin-bottom: -1px;}
+.download dd{width:275px;}
+.download a{ font:12px/26px tahoma; color:#666; }
+.product{ float:left; width:115px; margin-right:77px; display:inline;}
+.product dt{ font:bold 16px/32px tahoma; color:#757575; width:110px; margin-bottom: -1px;}
+.product a{font:12px/26px tahoma; color:#666;width:110px;}
+#footer .download a{padding-right: 20px;}
+.attention{ float:left; width:170px;margin-right:75px; display:inline;}
+.attention dt{font:bold 16px/32px tahoma; color:#757575; width:165px;margin-bottom: -1px;}
+.attention dd span{ margin-left:15px;padding:5px 7px 5px 21px; background: url("../img/public.gif")/*tpa=http://2013.miaov.com/student/css2015/wangmingxiao/QQ-music/img/public.gif*/ no-repeat 0 -155px;font:12px/22px "宋体"; color:#8b8b8b;}
+.attention dd .jion{ color:#1582bd; background: url("../img/public.gif")/*tpa=http://2013.miaov.com/student/css2015/wangmingxiao/QQ-music/img/public.gif*/ no-repeat 0 -215px;}
+.attention  a:hover span{ color:#000;}
+.attention a{font:12px/26px tahoma; color:#666;width:165px;}
+.friendLink{ width:70px; float:left; white-space:nowrap;}
+.friendLink dt{font:bold 16px/32px tahoma; color:#757575; width:66px;margin-bottom: -1px;}
+.friendLink a{width:66px; font:12px/26px tahoma; color:#666;}
+#copyRight{ width:960px; margin:100px auto 0; height:72px; text-align:center;}
+#copyRight p{ font:12px/24px tahoma; color:#666;}
+#copyRight p a{ font:12px/24px tahoma; color:#666;}
+#Music{width: 563px; height: 115px; position: fixed; bottom: 10px;border-radius: 4px; background: #888;}
+/* end public.css */
+
+/* index.css(i) 首页 */
+#header .header-navT .iMusic{background:#0dad51;}
+#header .header-navT .iMusic a{ color: #fff;}
+#imain{ width:960px; margin:0 auto;}
+#ileft-main{ width:700px;margin-left:2px;float:left; overflow: hidden;}
+#imain-picture{ padding-top:20px; width: 700px; height: 400px;position: relative; float:left; overflow: hidden;}
+.picture-top{width: 700px;height: 320px;position: absolute; overflow: hidden;}
+.picture-size{width: 680px;height:53px;padding-left:20px;position: absolute;top: 287px;left: 0; z-index:1;background: #000; opacity: 0.8; filter: alpha(opacity=80);}
+.picture-size li{position: absolute;z-index: 2;}
+.picture-size a{font:bold 28px/53px arial; color: #fff;}
+.paging{width: 59px; height: 29px;position: absolute;right: 15px;bottom: 92px;z-index: 2;}
+.paging a{display: block;float: left;width: 29px;height: 29px;background: url("../img/icon.png")/*tpa=http://2013.miaov.com/student/css2015/wangmingxiao/QQ-music/img/icon.png*/ no-repeat;}
+.paging .icon-left{margin-right: 1px;}
+.paging .icon-left:hover{background-position: -30px 0;}
+.paging .icon-right{background-position: -60px 0;}
+.paging .icon-right:hover{background-position: -90px 0;}
+.picture-pic{width: 690px;height: 80px;padding:0 5px;background: #000; position: absolute;bottom: 0;left: 0;z-index: 2;}
+.picture-pic li{width: 60px;height: 60px;float: left; margin: 10px 4px 0 5px; display: inline;position: relative; }
+.picture-pic a{display: block; width: 60px;height: 60px;opacity: 0.8; filter: alpha(opacity=80);}
+.picture-pic a:hover{opacity: 1; filter: alpha(opacity=100);}
+.picture-pic img{width: 60px;height: 60px;}
+#iOnline-first{width:700px; float:left; margin-top:40px; }
+.on-line{width:695px; float:left; height:30px; border-left:5px solid #f00;}
+.publish a{font:28px/30px "宋体"; padding:0 10px; color:#333; float:left;}
+.more a{ font:14px "宋体"; color:#0c8f44; padding-top:13px; float:left;}
+.leftLink a{width: 31px;height: 31px; float:left;background: url("../img/index-ioc.gif")/*tpa=http://2013.miaov.com/student/css2015/wangmingxiao/QQ-music/img/index-ioc.gif*/ no-repeat; display: block;}
+.leftLink a:hover{background: url("../img/index-ioc.gif")/*tpa=http://2013.miaov.com/student/css2015/wangmingxiao/QQ-music/img/index-ioc.gif*/ no-repeat 0 -31px;}
+.rightLink a{width: 31px;height: 31px;float:left;background: url("../img/index-ioc.gif")/*tpa=http://2013.miaov.com/student/css2015/wangmingxiao/QQ-music/img/index-ioc.gif*/ no-repeat -31px 0; display: block;}
+.rightLink a:hover{background: url("../img/index-ioc.gif")/*tpa=http://2013.miaov.com/student/css2015/wangmingxiao/QQ-music/img/index-ioc.gif*/ no-repeat -31px -31px;}
+.video{ width:710px; margin-top:8px; float:left;}
+.video li{ float:left; margin:10px 12px 0 0;}
+.video a{position: relative; width: 130px;height: 130px;display: block;}
+.video a:hover .icon-play{position: absolute;right: 5px;bottom: 53px;width: 20px;height: 20px;background:url("../img/icon_play.png")/*tpa=http://2013.miaov.com/student/css2015/wangmingxiao/QQ-music/img/icon_play.png*/ no-repeat;}
+.video a:hover .icon-play:hover{background:url("../img/icon_play.png")/*tpa=http://2013.miaov.com/student/css2015/wangmingxiao/QQ-music/img/icon_play.png*/ no-repeat -20px 0;}
+.video .video-shadow{position: absolute;z-index: 1; width: 130px; height: 48px;left: 0; bottom: 0;background: #000;opacity: 0.7; filter: alpha(opacity=70);}
+.video strong{position: absolute;left:0;z-index:2;display: block;width: 125px;padding-left: 5px;}
+.video .video-name{height: 28px;font: 14px/28px arial; color: #0cc65b;bottom: 20px;}
+.video .video-singer{height: 20px;font: 12px/18px arial; color: #fff; bottom: 0;}
+.video img{display: block;width: 130px;height: 130px;}
+#iPremiere{width:700px; float:left; margin-top:38px; }
+.first-run{width:720px; float: left;}
+.first-run li{ font:12px/23px arial,"微软雅黑"; height:168px; margin:18px 20px 0 0; float:left; width:160px; display:inline;}
+.first-run img{margin-bottom: 5px; display: block; width: 160px;height: 90px;}
+.first-run li a{ color:#515151;}
+.first-run li a:hover{ color:#000;}
+.first-run li a span{color:#0c8f44;}
+.first-run li a:hover span{ color:#05b600;}
+.first-run li p{ color:#8b8b8b; }
+.first-run li .digit{float:left;color:#a3a3a3;padding-left:12px;height: 20px; background: url("../img/index-ioc.gif")/*tpa=http://2013.miaov.com/student/css2015/wangmingxiao/QQ-music/img/index-ioc.gif*/ no-repeat -62px 6px;}
+.first-run li .date{ float: right; }
+#imusic-box{width:700px; margin-top:26px; float:left; overflow: hidden; }
+#imusic-box .boxL{ width:350px; float:left; }
+#imusic-box .boxR{float: left;width: 350px;}
+#imusic-box .recommend{ font:bold 26px/30px arial; float:left; padding-left:10px;border-left:5px solid #0dad51; height:30px;}
+#imusic-box .Chinese a{ padding-left:15px; color:#333; font-weight:bold;}
+#imusic-box .Chinese a:hover{ color:#05b600;}
+.play,.add{ background: url("../img/music.gif")/*tpa=http://2013.miaov.com/student/css2015/wangmingxiao/QQ-music/img/music.gif*/ no-repeat; display: block; width: 30px; height: 30px; float: left;}
+.newest .play{ background-position:0 -24px; margin: 0 9px;}
+.play:hover{ background-position:-30px -24px;}
+.newest .add{background-position:0 -54px;}
+.add:hover{background-position:-30px -54px;}
+.newest p{ float:left; font:12px/28px arial; height:30px;}
+.newest p a{padding:2px 8px 0px; color:#0c8f44;}
+.newest p a:hover{ color:#05b600;}
+.newest-list{width: 333px; padding-right: 16px; padding-top: 10px;}
+.newest-listR{ border-left: 1px solid #e5e5e5; width: 332px;}
+.newest-list li{height: 36px; line-height: 36px; overflow: hidden;}
+.boxR .newest-list li{ padding-left: 21px;height: 36px; line-height: 36px; overflow: hidden; }
+.newest-list div{height: 36px;width: 310px; overflow: hidden; text-overflow: ellipsis; position: relative;}
+.newest-list p{float:left;padding-right: 91px;max-width: 214px;font: 14px/36px arial; position: relative;}
+.newest-list p a{color:#0c8f44;}
+.newest-list p a:hover{ color:#05b600;}
+.newest-list .list-name{width: 79px; padding-left:8px; position: absolute; right: 0; top: 0; background: url("../img/music.gif")/*tpa=http://2013.miaov.com/student/css2015/wangmingxiao/QQ-music/img/music.gif*/ no-repeat 0 -122px;}
+.newest-list .list-name a{color: #515151;}
+.newest-list .list-name a:hover{color: #333;}
+.newest-list nav{width: 100px;height: 12px;overflow: hidden;float:right; margin: 12px -7px 0 0;display: inline;}
+.newest-list nav a{width: 13px; height: 12px; float:left;margin-right: 7px; background: url("../img/music.gif")/*tpa=http://2013.miaov.com/student/css2015/wangmingxiao/QQ-music/img/music.gif*/ no-repeat; display: inline;}
+.newest-list nav .nav1:hover{ background-position:0 -12px;}
+.newest-list nav .nav2{ background-position:-20px 0;}
+.newest-list nav .nav2:hover{ background-position:-20px -12px;}
+.newest-list nav .nav3{ background-position:-40px 0;}
+.newest-list nav .nav3:hover{ background-position:-40px -12px;}
+.newest-list nav .nav4{ background-position:-60px 0;}
+.newest-list nav .nav4:hover{ background-position:-60px -12px;}
+.newest-list nav .nav5{ background-position:-80px 0;}
+.newest-list nav .nav5:hover{ background-position:-80px -12px;}
+.newest-list .show{ background: url("../img/music.gif")/*tpa=http://2013.miaov.com/student/css2015/wangmingxiao/QQ-music/img/music.gif*/ repeat-x 0 bottom;}
+.newest-list .show div{width:240px ;float: left;}
+.newest-listR .show{ background: url("../img/music.gif")/*tpa=http://2013.miaov.com/student/css2015/wangmingxiao/QQ-music/img/music.gif*/ repeat-x 0 bottom;}
+.newest-listR .show div{width:200px ;float: left;}
+#imusic-box .boxR{ width:349px; float:left;}
+.boxR .hottest{width:349px; height:30px; padding-bottom:11px; float:left;}
+.hottest-list li{ float:left; width:328px; height:35px;margin-bottom:1px; padding-left:21px;}
+.hottest-list li p{font:14px/35px arial; color:#8b8b8b;}
+.hottest-list li a{color:#0c8f44;}
+.hottest-list li a:hover{ color:#05b600; background:url("../img/music-pic.png")/*tpa=http://2013.miaov.com/student/css2015/wangmingxiao/QQ-music/img/music-pic.png*/ no-repeat 0 bottom;}
+.hottest-list li span{color:#515151;}
+.hottest-list li a:hover span{ color:#000;}
+#iomnibus{ width:700px; float:left; margin-top:15px;}
+.omnibusTop{width:685px; margin-bottom:18px; border-left:5px solid #f3508d; height:30px; float:left;}
+.omnibusTop p{text-indent:-9999px;overflow: hidden;height: 26px;margin-left:10px;margin-top: 2px; background: url("../img/index_title_bg.png")/*tpa=http://2013.miaov.com/student/css2015/wangmingxiao/QQ-music/img/index_title_bg.png*/ no-repeat 0 -78px;}
+.omnibusLeft{ width:270px; margin-right:3px; float:left; display:inline;}
+.omnibusLeft p{ float:left;width:270px; font:12px/24px arial; color:#8b8b8b;}
+.omnibusLeft p a{ color:#0c8f44;}
+.omnibusLeft p a:hover{color:#05b600;}
+.omnibusList{ float:left; width:427px;}
+.omnibusList li{ float:left; margin:0 0 28px 12px; width:130px; display:inline;}
+.omnibusList li a{ font:12px/28px arial; color:#0c8f44;}
+.omnibusList li a:hover{color:#05b600;}
+#iright-main{width:220px;  float:right; margin-right:-2px;overflow: hidden; }
+#ilogin{width: 220px;}
+#ilogin p{ font:30px/72px arial; color:#e4e4e4; height:75px;}
+.login-text{background: url("../img/bg_login.png")/*tpa=http://2013.miaov.com/student/css2015/wangmingxiao/QQ-music/img/bg_login.png*/ no-repeat 0 20px; width: 220px;height: 75px;overflow: hidden;}
+#ilogin .user-login a{display: block; border-bottom:1px solid #e4e4e4; height:80px; background: url("../img/index-ioc.gif")/*tpa=http://2013.miaov.com/student/css2015/wangmingxiao/QQ-music/img/index-ioc.gif*/ no-repeat 25px -62px;}
+#ilogin .annual-fee{ margin-top:26px; height:126px;}
+#ipeakedness{ width:220px; margin-top:19px; overflow:hidden;}
+.peakedness-top{ float:left; height:30px; width:220px;}
+.peakedness-top p{float:left;text-indent:-9999px;overflow: hidden;height: 18px;margin-top: 6px;width: 60px; background: url("../img/index_title_bg.png")/*tpa=http://2013.miaov.com/student/css2015/wangmingxiao/QQ-music/img/index_title_bg.png*/ no-repeat 0 -220px;}
+.peakedness-top .play,.add{ background: url("../img/music.gif")/*tpa=http://2013.miaov.com/student/css2015/wangmingxiao/QQ-music/img/music.gif*/ no-repeat; display: block; width: 30px; height: 30px; float: left;}
+.peakedness-top .play{ background-position:0 -24px; margin: 0 10px 0 5px;}
+.peakedness-top .play:hover{ background-position:-30px -24px;}
+.peakedness-top .add{background-position:0 -54px;}
+.peakedness-top .add:hover{background-position:-30px -54px;}
+.peakedness-nav{ float:left; width:220px;height:40px;}
+.peakedness-nav p{ float:left; font:12px/40px arial;background:url("../img/peakedness.png")/*tpa=http://2013.miaov.com/student/css2015/wangmingxiao/QQ-music/img/peakedness.png*/ no-repeat 39px 14px; }
+.peakedness-nav a{ float:left; color:#0c8f44; padding:0 8px;}
+.peakedness-nav .Korea{ background:none;}
+.peakedness-nav .rage{ background:url("../img/peakedness.png")/*tpa=http://2013.miaov.com/student/css2015/wangmingxiao/QQ-music/img/peakedness.png*/ no-repeat 59px 14px; width:60px;}
+.peakedness-nav .rage a{float:left; font-weight:bold;padding-left:0px; color: #333;}
+.peakedness-nav a:hover{color:#05b600;}
+.peakedness-song{ margin-top:4px; float:left;width:220px; }
+.peakedness-song li{ float:left; font:12px/24px arial;height:24px; width: 220px;}
+.peakedness-song strong{ float:left;width:42px; color:#939393; font:12px arial; margin-top: 7px;}
+.peakedness-song a{ float:left; color:#0c8f44; width: 108px;height: 24px; display: block;}
+.peakedness-song p a{width: 70px;display: block;text-align: right;color:#515151;}
+.peakedness-song a:hover{color:#05b600;}
+.peakedness-song p a:hover{ color:#000;}
+.peakedness-song .special{ font:22px arial; height:51px; }
+.peakedness-song .special .five{width: 50px; margin-right: 11px; height: 50px;}
+.peakedness-song .special strong{color:#ff5400; float:left; height: 25px;font:25px arial; margin-top: -5px;}
+.peakedness-song .special a{color:#ff5400;}
+.peakedness-song .special p a{font: 12px arial; text-align: left;color: #515151; margin-top: 12px;}
+.peakedness-song .special a:hover{color:#05b600;}
+.peakedness-song .special p a:hover{color:#000;}
+.special .type span{width: 70px;}
+.special .type span{ font:14px arial; float:left; padding-top:13px; display: block;}
+.sundry{ height:86px; background:url("../img/dotted.png")/*tpa=http://2013.miaov.com/student/css2015/wangmingxiao/QQ-music/img/dotted.png*/ repeat-x; margin-top:15px; width:220px; border-bottom:1px solid #e4e4e4; padding:14px 0 0;overflow: hidden;}
+.sundry li{ float:left; font:12px/24px arial; width:80px;}
+.sundry .W{ width:60px;float:left; }
+.sundry li a{ color:#515151;}
+.sundry li a:hover{ color:#000;}
+#ihot-singer{padding-top:7px; width:220px;overflow:hidden;}
+.more-singer{ height:33px; width:220px;}
+.more-singer span{text-indent:-9999px; overflow: hidden; height:18px;width:70px;display:block; float:left;background: url("../img/index_title_bg.png")/*tpa=http://2013.miaov.com/student/css2015/wangmingxiao/QQ-music/img/index_title_bg.png*/ no-repeat 0 -202px;}
+.more-singer a{ text-indent:-9999px; overflow: hidden;float: left;width:37px; height:14px;margin:5px 0 0 10px;display: block;background: url("../img/index_title_bg.png")/*tpa=http://2013.miaov.com/student/css2015/wangmingxiao/QQ-music/img/index_title_bg.png*/ no-repeat 0 -238px;}
+.singer-pic{margin-bottom: -14px;}
+.singer-pic li{ float:left; margin:2px 34px 0 0; width:48px; height:88px;  display:inline;}
+.singer-pic .right-margin{ margin-right:2px;}
+.singer-pic a{ font:12px/30px arial; color:#0c8f44;}
+.singer-pic a img{
+	width: 50px;
+	height: 50px;
+}
+.singer-pic a:hover{color:#05b600;}
+#iactivity{width:220px; border-bottom:1px solid #e4e4e4;padding: 0 0 13px 2px; }
+#iactivity .act{text-indent:-9999px;overflow: hidden;margin-top:20px;margin-bottom:20px;background: url("../img/index_title_bg.png")/*tpa=http://2013.miaov.com/student/css2015/wangmingxiao/QQ-music/img/index_title_bg.png*/ no-repeat 0 -148px;display: block;height: 18px;}
+#iactivity a{ font:12px/24px arial; color:#0c8f44; height:131px; display:block;}
+
+
+/* end index.css */
+
+/* mv-type.css(m)MV页*/
+#header .header-navB .Mhome{ padding-left: 93px;}
+#header .header-navT .MMV{background:#0dad51;}
+#header .header-navT .MMV a{ color: #fff;}
+#mmain{ width:960px; margin:0 auto;}
+#mleft-main{ width:700px; padding-left:2px; float:left;}
+#mmain-picture{padding-top:20px; width: 700px; height: 400px;position: relative; float:left; overflow: hidden; margin-bottom: 12px;}
+.picture-top{width: 700px;height: 320px;position: absolute; overflow: hidden;}
+.picture-size{width: 680px;height:53px;padding-left:20px;position: absolute;top: 287px;left: 0; z-index:1;background: #000; opacity: 0.8; filter: alpha(opacity=80);}
+.picture-size li{position: absolute;z-index: 2;}
+.picture-size a{font:bold 28px/53px arial; color: #fff;}
+.paging{width: 59px; height: 29px;position: absolute;right: 15px;bottom: 92px;z-index: 2;}
+.paging a{display: block;float: left;width: 29px;height: 29px;background: url("../img/icon.png")/*tpa=http://2013.miaov.com/student/css2015/wangmingxiao/QQ-music/img/icon.png*/ no-repeat;}
+.paging .icon-left{margin-right: 1px;}
+.paging .icon-left:hover{background-position: -30px 0;}
+.paging .icon-right{background-position: -60px 0;}
+.paging .icon-right:hover{background-position: -90px 0;}
+.picture-pic{width: 690px;height: 80px;padding:0 5px;background: #000; position: absolute;bottom: 0;left: 0;z-index: 2;}
+.picture-pic li{width: 60px;height: 60px;float: left; margin: 10px 4px 0 5px; display: inline;position: relative; }
+.picture-pic a{display: block; width: 60px;height: 60px;opacity: 0.8; filter: alpha(opacity=80);}
+.picture-pic a:hover{opacity: 1; filter: alpha(opacity=100);}
+.picture-pic img{width: 60px;height: 60px;}
+.picture-pic a:hover span,.span{width: 60px;border-bottom: 5px solid #0cc65b;position: absolute;left: 0;bottom: 0;}
+#mOnline-first{width:700px; float:left; margin-top:40px;}
+.on-line{width:695px; float:left; height:30px; border-left:5px solid #f00;}
+.publish a{ text-indent: -9999px; overflow: hidden;width: 110px;height: 26px; margin-top: 2px; background: url("../img/index_title_bg.png")/*tpa=http://2013.miaov.com/student/css2015/wangmingxiao/QQ-music/img/index_title_bg.png*/ no-repeat 10px 0;}
+.prem a{background: url("../img/index_title_bg.png")/*tpa=http://2013.miaov.com/student/css2015/wangmingxiao/QQ-music/img/index_title_bg.png*/ no-repeat 10px -26px;width: 100px;}
+.more a{ text-indent: -9999px;overflow: hidden; width: 37px;margin-top:15px;background: url("../img/index_title_bg.png")/*tpa=http://2013.miaov.com/student/css2015/wangmingxiao/QQ-music/img/index_title_bg.png*/ no-repeat left -238px;}
+.leftLink{ float:left; padding-left:466px;}
+.rightLink{float:left;}
+.video{ width:710px; margin-top:8px; float:left;}
+.video li{ float:left; margin:10px 12px 0 0;}
+#mPremiere{width:700px; float:left; margin-top:28px; overflow: hidden;}
+#mon-line{ margin-top: 24px; width: 700px; float: left;}
+.size-one{background: url("../img/mv_bg.png")/*tpa=http://2013.miaov.com/student/css2015/wangmingxiao/QQ-music/img/mv_bg.png*/ no-repeat 0 -45px;height: 30px; }
+.size-one a{text-indent:-9999px; overflow: hidden;}
+.figure{width: 700px; float: left; margin-top: 18px;}
+.figure li{ float: left;width: 204px;}
+.figure .gap{margin: 0 44px;}
+.figure .one{float: left;width: 100px; height: 100px; margin-right: 8px; margin-bottom: 6px; display: inline;}
+.figure .one img{width: 100px; height: 100px;}
+.figure h4 a{width:96px;height: 22px; color: #515151; font: 12px arial; padding-top: 3px; display: block;float: left;}
+.figure p{float:left;width: 96px; font: 12px/18px arial; color: #8b8b8b; height: 54px;}
+.figure .unlike{ float:left;width: 204px; height: 22px; font: 12px/22px arial;}
+.unlike span{ float: right; color: #8b8b8b; display: block;}
+.unlike a{color: #0c8f44; float: left; display: block;}
+#mright-main{float:left;padding-left:40px;width: 218px; margin-right: -6px; display: inline;}
+#mindexing{ width: 224px; overflow: hidden;}
+#mindexing h3{font: 16px arial; height: 19px; padding-top: 27px; color: #8d8d8d;}
+#mindexing h4{font:bold 14px/38px arial;color: #333; padding-top: 4px;width: 224px;}
+#mindexing ul{ overflow: hidden;width: 260px;}
+#mindexing li{height: 30px; font: 12px/30px arial; width: 64px; float: left;}
+#mindexing a{ color: #515151; }
+#mtwenty-four{ border-top: 1px solid #e4e4e4;border-bottom: 1px solid #e4e4e4; margin-top: 18px;width: 220px; padding-bottom: 17px;}
+#mtwenty-four h3{ font: 18px/58px arial;height: 58px; color: #8d8d8d;width: 220px;}
+#mtwenty-four li{ float: left;font: 12px/24px arial; width: 220px;}
+#mtwenty-four em{ color: #8b8b8b; float: left; margin-right: 7px; display: inline;}
+#mtwenty-four span{ color:#8b8b8b ; float: right;}
+#mtwenty-four p{width: 150px; float: left; color: #8b8b8b;}
+#mtwenty-four i{ float: left;}
+#mtwenty-four a{color: #0c8f44;float: left; display: block; }
+#mtwenty-four .name{ color: #515151;float: left;display: block;}
+#mtwenty-four a:hover{ color: #05b600;}
+#mtwenty-four .name:hover{ color: #000;}
+#mtwenty-four .sole a{ font: 18px/36px arial;color: #ff5400;}
+.sole span{ float: right;}
+#special{border-bottom: 1px solid #e4e4e4; padding-bottom: 14px;}
+#special .splendid{ font: 18px/58px arial; color: #8d8d8d;height: 58px; margin-right: 10px;}
+#special .splendid a{ font-size:12px;color: #0c8f44;}
+.omnibus li{width: 220px; margin-bottom: 6px;}
+.omnibus a{font: 12px/30px arial; color: #0c8f44; width: 220px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block;}
+/* end mv-type.css*/
+
+/*client-side.css (c)下载客户端*/
+#header .header-navB .chome{ padding-left: 222px;}
+#header .header-navT .cdownload{background:#0dad51;}
+#header .header-navT .cdownload a{ color: #fff;}
+#cmian{ width:100%;}
+#ctheme{ position: relative; min-width: 960px; width: 100%; height: 430px; background: #061016;}
+.ctheme-top{ position: absolute; width: 100%;height: 430px; background: url("../img/download.jpg")/*tpa=http://2013.miaov.com/student/css2015/wangmingxiao/QQ-music/img/download.jpg*/ no-repeat center center;}
+.ctheme-width{width: 960px;height: 430px; margin: 0 auto; position: relative;}
+.ctop-box{ position: absolute;right: 50px; top: 60px;width: 196px;height: 170px; padding:14px;background: url("../img/ctop-box.png")/*tpa=http://2013.miaov.com/student/css2015/wangmingxiao/QQ-music/img/ctop-box.png*/ no-repeat 14px 14px; float: left;}
+.ctop-box p{float: left; width: 98px; height: 85px;}
+.ctop-box p a{width: 98px; height: 85px; display: block;}
+.ctop-box .ctext{width: 142px; float: right; margin-top: 24px;height: 14px;}
+.ctop-box .ctext a{color: #fff; font: 14px/14px "宋体";  height: 14px; width: 142px;display: block; text-decoration: underline;}
+#cgenuine{ height: 429px; padding-top: 70px;  background: #f1f1f1; border-bottom: 1px solid #c6c6c6; position: relative;}
+.cgenuine-top{width: 960px;margin: 0 auto;}
+.cgenuine-top h2{font: 36px/36px "宋体"; color: #1b954f; height: 36px;text-align: center;}
+.cgenuine-top p{font: 18px/18px "宋体"; color: #202020; height: 18px; text-align: center; margin-top: 25px; margin-bottom: 62px; overflow: hidden; }
+.cgenuine-bottom{width: 960px; position: absolute; left: -480px; margin-left: 50%;}
+#cubiquity{ margin-top: 104px; height: 396px;border-bottom: 1px solid #c6c6c6;position: relative;}
+.cubiquity-top{width: 960px; position: absolute; left: -480px;  margin-left: 50%; }
+.cubiquity-top h2{ font: 36px/36px "宋体"; color: #1b954f; height: 36px;text-align: center;}
+.cubiquity-top p{ font: 18px/18px "宋体"; color: #202020; height: 18px; text-align: center; margin-top: 20px; margin-bottom: 11px;}
+.cubiquity-bottom{width: 960px; position: absolute; left: -480px; bottom: -45px;margin-left: 50%;margin-top: 50%;}
+#cfind{height: 413px;border-bottom: 1px solid #c6c6c6;background: #f1f1f1; padding-top: 86px;position: relative;}
+.cfind-top h2{ font: 36px/36px "宋体"; color: #1b954f; height: 36px;text-align: center;}
+.cfind-top p{ font: 18px/18px "宋体"; color: #202020; height: 18px; text-align: center; margin-top: 20px; margin-bottom: 11px;}
+.cfind-bottom{width: 960px; position: absolute; left: -480px; margin-left: 50%;}
+#cinteract{ height:615px;position: relative;}
+.cinteract-top h2{font: 36px/36px "宋体"; color: #1b954f; height: 36px;text-align: center; margin-top: 58px;}
+.cinteract-top p{font: 18px/18px "宋体"; color: #202020; height: 36px; text-align: center; margin-top: 20px; margin-bottom:60px;}
+.cinteract-bottom{width: 960px; position: absolute; left: -480px;bottom: 0; margin-left: 50%;}
+/*end client-side.css*/
