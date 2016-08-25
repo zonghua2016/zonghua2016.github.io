@@ -522,7 +522,7 @@
 	yy.api.screenThree = screenThree;
 })(window);
 (function(window) {
-	$package('http://115.28.73.247:6060/yy/js/yy.api');
+	$package('yy/js/yy.api');
 
 	function screenFour() {
 		var oCell = yy.tools.$('cell');
