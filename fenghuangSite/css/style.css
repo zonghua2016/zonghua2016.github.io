@@ -18,8 +18,8 @@
 #closelay li:nth-of-type(3) a{float:left;margin-right:70px;}
 #closelay li:nth-of-type(4){margin-left:-550px;}
 
-.text{margin:0 30px 30px 0;position:absolute;right:0;padding-top:10px;color:#fff;}
-.icon1{display:inline-block;width:43px;height:44px;background: url(images/nav_icon3.jpg) no-repeat;margin-right:20px;}
+.text{margin:0 30px 30px 0;position:absolute;right:0;padding-top:10px;color:#fff;} 
+.icon1{display:inline-block;width:43px;height:44px;background: url(../images/nav_icon3.jpg) no-repeat;margin-right:20px;}
 .icon2{display:inline-block;width:43px;height:44px;background:url(../images/nav_icon1.jpg) no-repeat;margin-right:20px;}
 .icon360{display:inline-block;width:43px;height:44px;background:url(../images/nav_icon7.jpg) no-repeat;margin-right:20px;}
 .iconyyb{display:inline-block;width:43px;height:44px;background:url(../images/nav_icon6.jpg) no-repeat;margin-right:20px;}
