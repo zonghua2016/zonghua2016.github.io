@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0;padding:0;list-style:none;border:none; text-decoration:none;color:#000;}
+#head{width:100%;height:114px;position:relative;background:#fff;}
+#logo{position:absolute;width:200px;height:72px;background:url(images/logo.jpg) no-repeat;left:174px;}
+#bar{position:absolute;right:330px;}
+#bar li{float:left;margin-right:60px;margin-top:40px;}
+#bar li span{display:inline-block;width:13px;height:8px;background:url(images/down_d.jpg) no-repeat;}
+#ewm{width:112px;height:112px;position:absolute;right:172px;top:24px;z-index:99;}
+#ewm img{width:112px;height:112px;transition:0.8s;position:absolute;right:0;top:0;background:url(images/smlerweima.png) no-repeat;}
+#ewm img:hover{background:url(images/erweima_l.jpg) no-repeat;width:276px;height:367px;}
+
+#closelay{width:100%;height:0px;background:rgb(153,0,0);position:absolute;top:114px;font:20px/20px "宋体";overflow:hidden;transition:0.5s;}
+#closelay ul{width:400%;height:100%;position:absolute;left:0;top:0;}
+#closelay li{width:1360px;height:100px;float:left;margin:40px auto;}
+#closelay a{display:block;font-weight:bold;position:relative;width:250px;margin:0 auto; }
+#closelay li:nth-of-type(3){padding:0 250px;}
+#closelay li:nth-of-type(3) a{float:left;margin-right:70px;}
+#closelay li:nth-of-type(4){margin-left:-550px;}
+
+.text{margin:0 30px 30px 0;position:absolute;right:0;padding-top:10px;color:#fff;}
+.icon1{display:inline-block;width:43px;height:44px;background:url(images/nav_icon3.jpg) no-repeat;margin-right:20px;}
+.icon2{display:inline-block;width:43px;height:44px;background:url(images/nav_icon1.jpg) no-repeat;margin-right:20px;}
+.icon360{display:inline-block;width:43px;height:44px;background:url(images/nav_icon7.jpg) no-repeat;margin-right:20px;}
+.iconyyb{display:inline-block;width:43px;height:44px;background:url(images/nav_icon6.jpg) no-repeat;margin-right:20px;}
+
+#body{width:100%;position:relative;}
+#showimg{width:100%;height:852px;margin:0 auto;}
+#upimg{width:100%;height:852px;background:url(images/1.jpg) no-repeat; background-position:center top;float:left;position:absolute; transition:0.5s;left:20px;}
+#downimg{width:800px;height:700px;background:url(images/2s.png) no-repeat;position:absolute;right:0;z-index:10;margin-top:50px;position:absolute; transition:0.5s;top:0;}
+
+#product{width:1004px;border-top:1px solid #ccc;position:relative;left:174px;}
+.pro{font: bold 20px/25px "微软雅黑";width:120px;height:26px;background:white;text-indent:5px;padding-left:3px;position:absolute;top:-16px;left:0px;}
+.red{width:3px;height:18px;line-height:18px;background:red;position:absolute;left:-5px;top:5px;}
+#product ul{width:1024px;height:560px;margin:50px auto;}
+#product ul li{float:left;width:243px;height:460px;margin-right:8px; transition:0.3s; }
+#product ul li img{border-radius:8px;}
+#product ul li:nth-of-type(2){margin-top:20px;}
+#product ul li:nth-of-type(3){margin-top:-8px;}
+#product ul li:nth-of-type(4){margin-top:8px;}
+#product ul div{margin:5px auto;text-align:center;width:144px; }
+#product ul div h3{line-height:60px;}
+#product ul div span{display:inline-block;padding-bottom:5px;}
+#foot{position:relative;width:100%;height:152px;background:rgb(153,0,0);}
+#list{padding-top:34px;}
+#list a{padding:0 10px;color:white;}
+#foot div{text-align:center;color:white;margin-bottom:0px;font:12px/24px "宋体";}
+
+.side{width:112px;height:220px;position:fixed;bottom:-10px;right:8px;z-index:999;text-align:center;}
+.side span{font:12px/20px "宋体";color:#ccc;display:inline-block;}
+.side span:nth-of-type(1){font:bold 18px/50px "宋体";color:black;}
