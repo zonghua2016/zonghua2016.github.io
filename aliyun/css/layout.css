@@ -93,7 +93,7 @@ a{color:white;font-size: 14px;}
 #proImg>a:nth-of-type(1){left:0;}
 #proImg>a:nth-of-type(2){right:0;}
 #imgList{width:2700px;height:394px;position:absolute;left:0;top:0;}
-#imgList li{float:left;width:270px;height:394px;background-image:url(img/prolist1.jpg);position:relative;}
+#imgList li{float:left;width:270px;height:394px;position:relative;}
 #imgList li img{ transform:scale(0.5);}
 #imgList .mask{text-align:center;background:rgba(0,0,0,.5);width:270px;height:394px;color:white;position:absolute;left:0;top:0; transition:.3s;}
 
@@ -109,7 +109,7 @@ a{color:white;font-size: 14px;}
 #proObj h2{padding:60px 0 ;}
 #proTrans{width:100%;height:800px;}
 .proTransList{width:33%;height:200px;float:left;position:relative;}
-.proTransList>a{background-image:url(img/tbs1.jpg);background-position:0px 0px;display:block;width:150px;height:150px; transform:scale(0.5);color:#000;position:absolute;left:120px;top:-20px;}
+.proTransList>a{background-position:0px 0px;display:block;width:150px;height:150px; transform:scale(0.5);color:#000;position:absolute;left:120px;top:-20px;}
 .proTransList>a h1{position:absolute;top:150px;font-size:36px;display:block;width:200px;margin-left:-20px;}
 .proTransList ul{position:absolute;bottom:20px;width:320px;padding:0 50px;}
 .proTransList ul li{float:left;padding:0 10px;margin-bottom:10px;border-right:1px solid #ccc;font-size:14px;line-height:14px;color:#999;cursor:pointer;}
