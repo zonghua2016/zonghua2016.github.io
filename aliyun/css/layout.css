@@ -110,7 +110,7 @@ a{color:white;font-size: 14px;}
 #proTrans{width:100%;height:800px;}
 .proTransList{width:33%;height:200px;float:left;position:relative;}
 .proTransList>a{background-image:url(img/tbs1.jpg);background-position:0px 0px;display:block;width:150px;height:150px; transform:scale(0.5);color:#000;position:absolute;left:120px;top:-20px;}
-.proTransList>a h1{position:absolute;top:150px;font-size:36px;display:block;width:150px;}
+.proTransList>a h1{position:absolute;top:150px;font-size:36px;display:block;width:200px;margin-left:-20px;}
 .proTransList ul{position:absolute;bottom:20px;width:320px;padding:0 50px;}
 .proTransList ul li{float:left;padding:0 10px;margin-bottom:10px;border-right:1px solid #ccc;font-size:14px;line-height:14px;color:#999;cursor:pointer;}
 .proTransList ul li:hover{color:#00C1DE;}
