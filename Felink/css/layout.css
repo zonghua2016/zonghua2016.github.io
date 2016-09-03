@@ -7,7 +7,7 @@
 .stuck_container{background-color:white;padding:0 0 1px;}
 .navbar-static-top{height:80px;}
 .navbar-header{position:relative;}
-.navbar-brand{background-image:url(image/LOGO.png);display:block;width:146px;height:36px;position:absolute;left:0;top:20px;}
+.navbar-brand{background-image:url(../image/LOGO.png);display:block;width:146px;height:36px;position:absolute;left:0;top:20px;}
 #mycollapse{right:50px;width:400px;background:#F8F8F8;margin-top:10px;font-size:18px;}
 .navbar-nav li.active{background-color:#F8F8F8;}
 .dropdown{ transition:.3s linear;}
