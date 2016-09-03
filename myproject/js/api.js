@@ -45,9 +45,9 @@
 				}
 				this.preLoading();
 			}
-			if(music) {
+			/*if(music) {
 				this.musicPlay();
-			}
+			}*/
 
 			if(opt.arrow) {
 				this.oArrow = yy.tools.getClass(this.oHeader, 'arrow')[0];
@@ -120,7 +120,7 @@
 				var oLoad = yy.tools.$('load'); //删除load，不然会无法点击下面的页面；
 				var aDiv = oLoad.getElementsByTagName('div');
 				oLoad.parentNode.removeChild(oLoad);
-				that.musicAuto();
+				//that.musicAuto();
 			}
 		},
 		change: function(index) { //事件处理函数；获取当前触发对象的值，进行操作；
@@ -330,7 +330,7 @@
 			}];
 
 		},
-		musicPlay: function() {
+		/*musicPlay: function() {
 			var that = this;
 			this.musicOn = true;
 			this.oAudio = yy.tools.$('audio');
@@ -348,7 +348,7 @@
 				this.oAudio.pause();
 			}
 			this.musicOn = !this.musicOn;
-		}
+		}*/
 
 	}
 	yy.api.Tab = Tab;
