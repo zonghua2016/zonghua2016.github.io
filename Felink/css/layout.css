@@ -2,7 +2,7 @@
 /* CSS Document */
 
 *{margin:0;padding:0;list-style:none; text-decoration:none;}
-.banner-box{height:753px;}
+.banner-box{height:780px;}
 .banner-box-zm{background-position: center center; background-repeat: no-repeat; background-size: cover;height: 100%;width: 100%;}
 .stuck_container{background-color:white;padding:0 0 1px;}
 .navbar-static-top{height:80px;}
@@ -25,7 +25,7 @@
 .item:nth-of-type(3) .carousel-caption p{color:#6040D7;}
 .item:nth-of-type(4) .carousel-caption:nth-of-type(4) p{color:#000;}
 
-.downloadapp{width:800px;height:56px;text-align:center;position:absolute;left:50%;margin-left:-400px;top:200px;}
+/*.downloadapp{width:800px;height:56px;text-align:center;position:absolute;left:50%;margin-left:-400px;top:200px;}
 .downloadapp a{display:inline-block;height:54px;border:1px solid #ccc;font-size:24px;color:#FFF;line-height:54px;cursor:pointer; text-decoration:none;}
 .downloadapp .btndown{width:266px;}
 .downloadapp .btnanddown{background-color:#00BCD5;border-right:none;}
@@ -36,7 +36,7 @@
 .downloadapp .ewm:hover{background-color:#0FF;}
 .downloadapp .ewmios{background-color:#fff;}
 .downloadapp .ewmios:hover{background-color:#FFC;}
-
+*/
 #icon1{margin:80px 0;}
 .thumbnail{border:none;}
 .caption{text-align:center;}
