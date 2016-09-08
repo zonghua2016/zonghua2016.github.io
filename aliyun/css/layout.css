@@ -2,7 +2,7 @@
 /* CSS Document */
 
 *{margin:0;padding: 0;list-style: none;text-decoration: none;}
-.navbar{width:100%;height:60px;border-bottom: 1px solid #999;background: #000;color: white ;overflow: hidden;}
+.navbar{width:1350px;height:60px;border-bottom: 1px solid #999;background: #000;color: white ;overflow: hidden;}
 .logo{position:relative; left:74px;}
 .logo img{position:absolute;width:96px;height:23px;}
 #logo-img{top:20px;left: 1px;}
@@ -19,7 +19,7 @@ a{color:white;font-size: 14px;}
 .cur{width:100px;background-color:#00a2ca;text-align:center;}
 .cur a{width:100px;height:60px;display:block;color:white !important;}
 
-#bgd{width:100%;height:500px;background-color:#000;position:relative;overflow:hidden;}
+#bgd{width:1350px;height:500px;background-color:#000;position:relative;overflow:hidden;}
 #bglist{position:relative;}
 #bglist li{float:left;display:none;}
 #bglist li:nth-of-type(1){display:block;}
@@ -39,7 +39,7 @@ a{color:white;font-size: 14px;}
 #whiteblock{position:absolute;left:50%;bottom:0;margin-left:-70px;width:140px;height:16px; padding:0 20px;}
 #whiteblock span{display:block;width:26px;margin-right:6px;height:4px;background-color:rgba(255,255,255,0.5);float:left;cursor:pointer;}
 
-#onebg{width:100%;height:132px;background:#D7D7D8;overflow:hidden;}
+#onebg{width:1350px;height:132px;background:#D7D7D8;overflow:hidden;}
 #onebg div{float:left;}
 .oneLi{width:240px;height:132px;cursor:pointer;position:relative; overflow:hidden;}
 #onebg div:first-child{margin-left:74px;}
@@ -48,7 +48,7 @@ a{color:white;font-size: 14px;}
 .oneLi span:nth-of-type(2){font:14/14px "宋体";padding-top:42px;}
 .img{width:350px;height:350px;background-position:0 0;position:absolute;right:-120px;top:-90px;z-index:0; transform:scale(0.5);}
 
-#proBord{width:100%;position:relative;text-align:center;}
+#proBord{width:1350px;position:relative;text-align:center;}
 #proBord>span{font:bold 24px/24px "微软雅黑";margin:82px 0 70px 0;display:block;}
 #proList{padding:0 74px;}
 .pro{width:33.3%;height:450px;float:left;}
@@ -59,7 +59,7 @@ a{color:white;font-size: 14px;}
 .special a:last-child{padding:0;}
 .special a:hover{ text-decoration:underline;}
 
-#proLi{width:100%;height:900px;background-color:#EBEBEB;border-top:1px solid #ccc;}
+#proLi{width:1350px;height:900px;background-color:#EBEBEB;border-top:1px solid #ccc;}
 #proLi>h3{text-align:center;padding:82px 0;}
 #proLis{margin-left:74px;}
 #proLis>li{float:left;width:260px;height:550px;border:1px solid #999; box-shadow:0 0 0px 0px; transition:0.3s;}
@@ -105,7 +105,7 @@ a{color:white;font-size: 14px;}
 #imgList .mask a:hover{background-color:white;color:#00C1DE;}
 
 
-#proObj{width:100%;height:600px;background-color:#FFF;text-align:center;}
+#proObj{width:1350px;height:600px;background-color:#FFF;text-align:center;}
 #proObj h2{padding:60px 0 ;}
 #proTrans{width:100%;height:800px;}
 .proTransList{width:33%;height:200px;float:left;position:relative;}
@@ -116,7 +116,7 @@ a{color:white;font-size: 14px;}
 .proTransList ul li:hover{color:#00C1DE;}
 
 
-#proObj1{width:100%;height:572px;background-color:#F5F5F5;text-align:center;overflow:hidden;}
+#proObj1{width:1350px;height:572px;background-color:#F5F5F5;text-align:center;overflow:hidden;}
 #proObj1>span{font:bold 24px/24px "微软雅黑";padding:70px 0;display:block;}
 #shequ{padding-left:74px;width:100%;height:572px;}
 #shequ .shequList{float:left;width:400px;margin:0 5px;}
@@ -125,7 +125,7 @@ a{color:white;font-size: 14px;}
 #shequ .shequList .shequSpan{text-align:left;}
 #shequ .shequList .shequSpan>span{margin-bottom:10px;display:block;cursor:pointer;}
 
-#aliFoot{width:100%;height:800px;text-align:center;background-color:#373D41;color:white;}
+#aliFoot{width:1350px;height:800px;text-align:center;background-color:#373D41;color:white;}
 #foot{width:100%;height:800px;}
 #first{width:1100px;margin:10px auto;border-bottom:1px solid #4D5356
 ;padding-bottom:30px;}

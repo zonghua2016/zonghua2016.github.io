@@ -3,7 +3,7 @@
 *{margin:0;padding:0;list-style:none;border:none; text-decoration:none;color:#000;}
 #head{width:100%;height:114px;position:relative;background:#fff;}
 #logo{position:absolute;width:200px;height:72px;background: url(../images/logo.jpg) no-repeat;left:174px;}
-#bar{position:absolute;right:330px;}
+#bar{position:absolute;left:430px;width:700px;}
 #bar li{float:left;margin-right:60px;margin-top:40px;}
 #bar li span{display:inline-block;width:13px;height:8px;background:url(../images/down_d.jpg) no-repeat;}
 #ewm{width:112px;height:112px;position:absolute;right:172px;top:24px;z-index:99;}

@@ -188,8 +188,23 @@ $(function(){
 					},300);
 				});
 	
+	//$imgList
+//	$imgListLi
+	//点击左右两个a标签的效果
 	$proImgA.eq(0).click(function(){
-		///$imgList.css('animation','move 5s linear infinite');
+		$('#imgList li:last').prependTo($imgList);
+		$imgList.css('left',-270);
+		$imgList.animate({'left':0},300);
+		});
+	$proImgA.eq(1).click(function(){
+		$imgList.animate({'left':-270},300,function(){
+			$('#imgList li:first').appendTo($imgList);
+			$imgList.css('left',0);
+			});
+		});
+	
+	
+	/*$proImgA.eq(0).click(function(){
 		if(rolleft==0){
 			rolleft=-1350;
 			}else{
@@ -204,7 +219,7 @@ $(function(){
 				rolleft-=1350;
 				}
 		$imgList.animate({'left':rolleft},300);
-		});
+		});*/
 	
 	var $proTransListA=$('.proTransList>a');
 	$proTransListA.each(function(i, elem) {
