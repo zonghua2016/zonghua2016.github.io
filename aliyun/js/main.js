@@ -147,19 +147,20 @@ $(function(){
 	var rolleft=0;
 	
 	for(var i=0;i<$imgListLi.length;i++){
+		$imgListLi.eq(i).attr('index',i);
 		$imgListLi.eq(i).css({'background-image':'url(img/prolist'+(i+1)+'.jpg)','background-size':'contain'});
 		$maskImg.eq(i).attr({'src':'img/prolist'+(i+1)+'-1.png'});
 		$imgListLi.eq(i).hover(function(){
-			 setMask($(this).index());
+			 setMask($(this).attr('index'));
 			  },function(){
-				  setoutMask($(this).index());
+				  setoutMask($(this).attr('index'));
 				  });
 		}
 	
 	//鼠标移出里
 	function setoutMask(num){
 		$mask.eq(num).css({'background':'rgba(0,0,0,.7)'});
-		$maskImg.eq(num).attr({'src':'img/prolist'+(num+1)+'-1.png'}).stop().animate({'margin-top':50},300);
+		$maskImg.eq(num).attr({'src':'img/prolist'+(parseInt(num)+1)+'-1.png'}).stop().animate({'margin-top':50},300);
 		$maskSpan.eq(num).css({'display':'block'});
 		$maskH2.eq(num).stop().animate({'top':200},300);
 		$maskP.eq(num).stop().animate({'display':'none','bottom':90,'opacity':0},300);
@@ -168,7 +169,7 @@ $(function(){
 		//鼠标移入li
 	function setMask(num){
 		$mask.eq(num).css({'background':'rgba(0,193,222,.6)'});
-		$maskImg.eq(num).attr({'src':'img/prolist'+(num+1)+'-2.png'}).stop().animate({'margin-top':20},300);
+		$maskImg.eq(num).attr({'src':'img/prolist'+(parseInt(num)+1)+'-2.png'}).stop().animate({'margin-top':20},300);
 		$maskSpan.eq(num).css({'display':'none'});
 		$maskH2.eq(num).stop().animate({'top':150},300);
 		$maskP.eq(num).stop().animate({'display':'block','bottom':140,'opacity':1},300);

@@ -6,7 +6,7 @@
 .logo{position:relative; left:74px;}
 .logo img{position:absolute;width:96px;height:23px;}
 #logo-img{top:20px;left: 1px;}
-#logoimg{top:20px;}
+#logoimg{top:20px;left: 1px;}
 a{color:white;font-size: 14px;}
 .nav{position:absolute;left:260px;}
 #hotimg{width:24px;position: absolute;left:60px;top:8px;}
@@ -20,7 +20,7 @@ a{color:white;font-size: 14px;}
 .cur a{width:100px;height:60px;display:block;color:white !important;}
 
 #bgd{width:1350px;height:500px;background-color:#000;position:relative;overflow:hidden;}
-#bglist{position:relative;}
+#bglist{position:relative;width:1350px;}
 #bglist li{float:left;display:none;}
 #bglist li:nth-of-type(1){display:block;}
 #bglist li div{position:absolute;cursor:pointer;}
