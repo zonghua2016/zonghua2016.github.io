@@ -45,17 +45,17 @@
 #icon2 .col-lg-4 .thumbnail{background-color:#ccc;}
 #conticon2{background-color:#ccc;}
 
-#foot{width:100%;background-color:#F7F7F7;}
-#foot p{display:-block;}
+#footer{width:100%;background-color:#F7F7F7;}
+#footer p{display:-block;}
 #footList{width:100%;margin-bottom:50px;}
 #list{padding-top:80px;margin:0 auto;text-align:center;}
-#list>li{margin-right:200px;text-align:left;float:left;}
+#list>li{margin:0 110px;text-align:left;float:left;}
 
 #list>li span{font-size:24px;color:#A1A4A7;margin-bottom:15px;display:block;width:160px;}
 #list>li ul li{color:16px;margin-bottom:10px;cursor:pointer; transition:.3s;}
 #list>li ul li:hover{color:#00F;margin-left:5px;}
 
-#copy{text-align:left;color:#999;font-size:14px;margin-bottom:50px; min-width:400px;}
+#copy{color:#999;font-size:14px;min-width:400px;margin:0 100px 50px;}
 
 
 

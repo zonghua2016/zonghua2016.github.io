@@ -68,7 +68,7 @@ $(function(){
 			if(!$(this).attr('cur')){
 				$('#bar li').attr('cur','');
 				$('#closelay').css('height',120);
-				$('#closelay ul').animate({'left':-1360*$(this).index()},200);
+				$('#closelay ul').animate({'left':-1350*$(this).index()},200);
 				$('#body').animate({'top':120},300);
 				$('#bar li span').css('background','url(images/down_d.jpg) no-repeat');
 				$('#bar li span').eq($(this).index()).css('background','url(images/down_d_cur.jpg) no-repeat');
