@@ -1,0 +1,371 @@
+@charset "utf-8";
+/* CSS */
+body,header,img,div,ul,li,p,h1,h2,h3,h4,dl,dd,form,input,textarea,select{
+	padding:0;marign:0;font-family:arial;
+	}
+li{
+	list-style:none;
+	}
+img{
+	border:none;
+	}
+a{
+	text-decoration:none;
+	}
+a:hover{
+	text-decoration:underline;
+	}
+body{
+	width: 100%;margin:0 auto;
+}
+/*头部*/
+header{
+	width: auto; height: 100px;margin:0 auto;
+	background: #506772; overflow: hidden;
+	opacity: 0.7; filter: alpha(opacity:70);
+}
+header div{
+	float: left;
+}
+#nav{
+	width: 100%; margin: 0 auto;
+	position: relative;
+}
+#brand{
+	 width: 10%; height: 60px;
+	 padding-left: 66px; position: absolute;
+	 top: 50%; margin-top: -30px;
+}
+#brand img{
+	width: 60px; height: 60px;
+}
+#navList{
+	width: 70%; height: auto; margin:0 auto;
+}
+#navList li{
+	width: 10%; text-align: center;
+	float: left;  font-size: 26px; line-height: 100px;
+	margin-right: 66px;
+}
+#navList li.last{
+	margin-right:0;
+}
+#navList #rollSpan{
+	display: block; background: #fff;
+	width: 0px;height: 4px;
+	position: absolute; bottom: 18px; left: 224px;
+}
+#navList li a{
+	color: #fff; text-decoration: none;
+}
+#seach{
+	float: right; width: 20%; height: 45px;
+	position: relative;	top: 50%; margin-top: 30px;
+	background: url(../image/seach.jpg) no-repeat;
+}
+#seach #btnSeach{
+	background: rgba(0,0,0,0);
+	width: 200px;height: 45px;
+	border: medium none;
+	position: absolute; left: 10px;
+}
+#btnSub{
+	width: 45px; height: 45px;
+	background: rgba(0,0,0,0);
+	border: medium none;
+	position: absolute; right: 0;
+	cursor: pointer;
+}
+/*头部结束*/
+/*轮播图*/
+#banner{
+	width: 100%; height: 750px; margin: 0 auto; overflow: hidden; position: relative;
+}
+#banner div{
+	position: absolute; 
+}
+#banner .arrow{
+	width: 100px;height: 100px; z-index: 99;
+	border: 3px solid greenyellow;
+	top:50%; margin-top: -50px;
+	cursor: pointer; text-align: center;
+	color: greenyellow; font-weight: bold; font-size: 48px; line-height: 100px;
+	border-radius: 50%; transition: 0.3s;
+}
+#banner .arrow:hover{
+	transform: scale(1.2);
+}
+#arrowLeft{
+	left: 50px;
+}
+#arrowRight{
+	right: 50px;
+}
+#banImg{
+	width: 3200px; height: 760px;
+}
+#banImg li {
+	width: 1600; height: 760px;
+	position: absolute; top: 0 left: 0;
+}
+#banImg li img{
+	width: 100%; height: 760px; margin-top: -20px; display:inline-table;
+	opacity: 0;
+}
+#dot{
+	width: 200px; height: 20px;
+	position: absolute; bottom: 30px; left: 50%; margin-left: -100px;
+}
+#dot span{
+	display: block; float: left; margin: 0 15px;
+	width: 20px; height: 20px; background: #FFFFFF;
+	border-radius: 50%;
+	cursor: pointer;
+}
+#dot span:nth-of-type(1){
+	background: #ccc;
+}
+#dot span:hover{
+	background: #ccc;
+}
+/*轮播结束*/
+
+/*版本下载*/
+#suggest{
+	width: 100%; height: 670px; margin-top: -20px; border-top: 1px solid #CCCCCC;
+	background: url(../image/animate_bg/1.png) no-repeat;
+	background-size: cover;
+	position: relative; overflow: hidden;
+}
+#suggest:hover #appDown{
+	transform: rotateY(0);
+}
+#appDown{
+	width: 33.33%;	height: 670px; text-align: center;
+	background: rgba(116,116,116,.7);
+	position: relative; top: 0; left: 0;
+	transform-style: preserve-3d; transform-origin: center;
+	transform: rotateY(180deg); transition: .5s;
+}
+
+#appDown img{
+	margin: 224px 0 54px 0; transition: .3s; cursor: pointer;
+}
+#appDown img:hover{
+	transform: scale(1.4);
+}
+#appDown a{
+	display: block; width: 268px; height: 80px; margin: 0 auto;
+	color: #FFFFFF; font: bold 24px/80px "微软雅黑";
+	text-decoration: none; border-radius: 10px; text-indent: 3em;
+	margin-bottom: 24px; opacity: 0;
+}
+#ipone{
+	margin-bottom: 24px;
+	background:#363636 url(../image/verdown.jpg) 20px 2px no-repeat;
+}
+#android{
+	background:#afd127 url(../image/verdown.jpg) 20px -82px no-repeat;
+}
+
+#content{
+	width: 60%; height: 670px;
+	position: absolute; right:0px; top: 0;
+	margin: 100px 20px 0 73px;
+}
+#content h1,#content p{
+	color: #fff; margin: 0;
+}
+#content h1{
+	font-size: 60px;
+}
+#content p{
+	margin-top: 32px;
+	font-size: 22px; line-height: 46px;
+}
+/*版本下载结束*/
+/*产品*/
+#product{
+	width: 100%; height: 670px; color: #FFFFFF;
+	position: relative;
+}
+#product div{
+	float: left;
+}
+#proLeft{
+	width: 66.66%;height: 670px; 
+	background: url(../image/proImg1.jpg) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+#proLeft #leftText{
+	position: absolute; top: 280px; right: -150px; opacity: 0;
+	text-align: center; 
+}
+#leftText h1{
+	font-size: 50px; font-weight: normal;
+}
+#leftText p{
+	font-size: 20px; margin-bottom: 70px; margin-top: -20px;
+}
+#leftText a{
+	font-size: 20px; color: #fff; display: block;
+	width: 166px; height: 40px;line-height: 40px; border: 2px solid #FFFFFF;
+	margin: 0 auto; text-align: center; text-decoration: none;
+	border-radius: 10px;
+}
+#leftText a:hover{
+	background-color: #ccc;
+}
+#proRight{
+	width: 33.33%;height: 670px; 
+	position: absolute; top: 0; right: 0;
+}
+#proRight>div{
+	width: 100%; height: 50%; 
+	opacity: 0.8;
+	position: relative;
+	text-align: center;
+}
+#proRight div h3,#proRight div p,#proRight a{
+	position: absolute; left: 50%; margin-left:-40%; width: 80%; z-index: 99;
+	opacity: 0;
+}
+#proRight div h3{
+	font-size: 26px;
+	bottom: 0px;
+}
+#proRight div p{
+	font-size: 16px; line-height: 32px;
+	bottom: 0px;
+}
+#proRight div a{
+	color: #FFFFFF; text-decoration: none;
+	border: 2px solid #FFFFFF; border-radius: 5px; padding: 5px 10px;
+	bottom: 0px; width: 20%;left: 50%; margin-left: -10%;
+}
+#maskTop,#maskBottom{
+	width: 100%; height: 100%; opacity: 0; 
+}
+#maskTop{
+	background: rgba(247,72,12,.8);
+}
+#maskBottom{
+	background: rgba(97,111,113,.8);
+}
+#proRight div a:hover{
+	background-color: #ccc;
+}
+#proTop{
+	background: url(../image/proImg3.png) no-repeat;
+	background-size: cover;
+}
+#proBottom{
+	background: url(../image/proImg2.png) no-repeat;
+	background-size: cover;
+}
+/*产品结束*/
+/*关于我们*/
+#about{
+	width: 100%; height: 670px;
+	position: relative;
+}
+#about>div{
+	width: 50%; height:670px; color: #FFFFFF; overflow: hidden;
+	position: absolute;
+	transition: 0.5s;
+}
+#about div h3,#about div p,#about div a{
+	text-align: center; width: 90%; display: block; margin: 0 auto;
+	font-size: 22px;line-height: 42px;
+	position: absolute; left: 0%; margin-left: -45%;
+	opacity: 0;
+}
+#about div h3{
+	font-size: 74px; bottom: 410px;
+}
+#about div p{
+	top: 280px; text-align: left;
+}
+#about div a{
+	color: #FFFFFF; text-decoration: none; 
+	padding: 5px 10px; border-radius: 10px;
+	border: 1px solid #FFFFFF; width: 20%;
+	left: 0%; margin-left: -10%; bottom: 128px;
+}
+#about div a:hover{
+	background-color: #ccc;
+}
+#aboutUs{
+	background: url(../image/aboutus.jpg) no-repeat;
+	background-size: 150%;
+	left: 0; 
+}
+#edLife{
+	background: url(../image/edleft.jpeg) no-repeat;
+	background-size: 150%; background-position: 50% 25%; 
+	right: 0;
+}
+#maskLeft,#maskRight{
+	width: 100%; height: 100%; opacity: 0;
+	position: absolute; top: 0;
+	
+}
+#maskLeft{
+	background: rgba(247,72,12,.8);
+}
+#maskRight{
+	background: rgba(97,111,113,.8);
+}
+#about>div:hover{
+	background-size: 200%;
+}
+/*关于我们结束*/
+/*尾部*/
+footer{
+	width: 100%; height: 480px; margin: 0 auto;
+	background-color: #2b3a42; color: #FFFFFF;
+	position: relative; overflow: hidden;
+}
+#list{
+	width: 50%;height: auto; margin-top: 140px;
+	position: absolute; left: 0;
+}
+#list a{
+	color: #FFFFFF; text-decoration: none; transition: .3s;
+}
+#list li{
+	float: left; width: 33.33%; text-align: center;
+	font-size: 22px; line-height: 62px;
+}
+#contant{
+	width: 50%;height: auto; margin-top: 180px;
+	position: absolute; right: 0;
+}
+#contant span{
+	font-size: 26px; display: block;width: 100%; top: -50px; left: 50%; margin-left: -8%;
+}
+#contantWay{
+	width : 352px;margin: 0 auto; border-top: 4px solid #FFFFFF; padding-top: 26px;
+}
+#contantWay a{
+	display: block; width: 80px; height: 80px; float: left;
+	margin-right: 56px; transition: .3s;
+}
+#contantWay a.last{
+	margin-right:0;
+}
+#list li a:hover{
+	color: cornflowerblue; margin-left: -10px;
+}
+#contantWay a:hover{
+	transform-origin: center;
+	transform: rotateZ(360deg) scale(1.2);
+}
+footer span{
+	font-size: 26px; display: block; width: 100%; 
+	position: absolute; bottom: 54px; left: 50%; margin-left: -10%;
+}
+
+
+/*尾部结束*/
