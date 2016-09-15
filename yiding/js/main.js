@@ -3,12 +3,11 @@ $(function(){
 	$li=$('#navList li');
 	$span=$('#rollSpan')
 	
-	
 	$li.hover(function(){
-		$span.css('width',$(this).width()).stop().animate({'left':$(this).position().left},300);
+		$span.css('width',$(this).width()+20).stop().animate({'left':$(this).position().left-10},300);
 	},function(){
 		$liActive=$('#navList li.active');
-		$span.css('width',$liActive.width()).stop().animate({'left':$liActive.position().left},300);
+		$span.css('width',$liActive.width()+20).stop().animate({'left':$liActive.position().left-10},300);
 	})
 	$li.click(function(){
 		$(this).addClass('active').siblings().removeClass('active');
@@ -168,4 +167,34 @@ $(function(){
 	for(var i=0;i<$contantWayA.length;i++){
 		$contantWayA.eq(i).css('background','url(image/contantway.jpg) no-repeat 0  '+(-i*80)+'px')
 	}
+	
+	/*小屏幕时按钮效果*/
+	var $menuBtn=$('#menuBtn');
+	var $navList=$('#navList');
+	var $navA=$('#navList li a');
+	var boff=true,num=-1;
+	var navTimer=null;
+	$menuBtn.click(function(){
+		if(boff){
+			$(this).css('background','url(image/menuBtn.jpg) no-repeat 0 -28px');
+			$navList.animate({'height':260,'opacity':1},200,function(){
+				navTimer=setInterval(function(){
+					if(num==$navA.length-1){
+						clearInterval(navTimer);
+					}else{
+						num++;
+					}
+					$navA.eq(num).animate({'margin-left':0,'opacity':1},300);
+				},100);
+			});
+			num=-1;
+		}else{
+			$(this).css('background','url(image/menuBtn.jpg) no-repeat 0 0');
+			$navList.animate({'height':0,'opacity':0},300);
+			for(var i=0;i<$navA.length;i++){
+				$navA.eq(i).css({'margin-left':100,'opacity':0});
+			}
+		}
+		boff=!boff;
+	})
 })

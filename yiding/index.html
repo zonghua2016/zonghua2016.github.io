@@ -2,19 +2,127 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" >
-		<meta name="viewport" content="width=device-width,initial-scale=1 ,maximum-scale=1,user-scalable=no" >
+		<meta name="viewport" content="width=device-width,initial-scale=1" >
 		<title>医叮</title>
 		<link rel="stylesheet" href="style/layout.css" />
 		<style>
-			@media only screen and (min-width:800px) and (max-width:1486px; ){
-				
+			@media only screen and (min-width:1200px) and (max-width:1486px ){
+				#navList li{
+					margin-right: 30px;
+				}
 			}
-			@media only screen and (max-width:800px; ) and (min-width:400px){
-				
+			@media only screen and (max-width:1200px ) and (min-width:800px){
+				#seach{
+					display: none;
+				}
+				#navList{
+					width: 70%;
+					position: absolute; right: 66px;
+				}
+				#navList li{
+					margin-right: 15px;
+				}
+				#brand{
+					position: absolute; left: 66px; padding-left: 0; top: 50%; margin-top: 20px;
+				}
 			}
-			@media only screen and (max-width:400px){
+			@media only screen and (max-width:800px){
+				#seach{
+					display: none;
+				}
+				#navList #rollSpan{
+					display: none;
+				}
+				#navList{
+					width: 50%; height: 0px; background: #506772;
+					position: absolute; right: 0; top: 100px; z-index: 999;
+					border-radius: 0 0 10px 10px; opacity: 0;
+				}
+				#navList li{
+					float: none; margin-right: 0; line-height: 50px; 
+					border-bottom: 1px solid #FFFFFF; cursor: pointer;
+				}
+				#navList li a{
+					display: block; margin-left: 100px; opacity: 0;
+				}
+				#navList li.last{
+					border-bottom: none;
+				}
+				#navList li:hover{
+					background: #363636;
+				}
+				#brand{
+					position: absolute; left: 66px; padding-left: 0; top: 50%; margin-top: 20px;
+				}
+				#menuBtn{
+					display: block; width: 28px; height: 29px;
+					background: url(image/menuBtn.jpg) no-repeat 0 0;
+					position: absolute; right: 66px; top: 50%; margin-top: 32px;
+				}
+				#banImg li{
+					z-index: -10;
+				}
+				#content h1{
+					font-size: 40px;
+				}
+				#content p{
+					font-size: 16px; 
+				}
+				#appDown a{
+					width: 200px; font: bold 16px/80px "微软雅黑";
+				}
 				
+				#product{
+					height: 1005px;
+				}
+				#proLeft{
+					width: 100%; 
+				}
+				#proLeft #leftText{
+					right: 60px; opacity: 1;
+				}
+				#proRight{
+					width: 100%;
+				}
+				#proRight>div{
+					width: 50%; height: 50%; 
+					opacity: 0.8; float: left;
+				}
+				#proTop,#proBottom{
+					position: absolute; top: 670px;
+				}
+				#proTop{
+					left: 0;
+				}
+				#proBottom{
+					right: 0;
+				}
+				#proRight div p{
+					font-size: 16px; line-height: 20px;
+				}
+				#about{
+					height: 1340px;
+				}
+				#about>div{
+					width: 100%; height:670px; 
+					position: relative;
+				}
+				footer{
+					height: 760px;
+				}
+				#list{
+					width: 100%; height: 380px; position: static;
+				}
+				#contant{
+					width: 100%; height: 380px; position: static; margin-top: -80px;
+				}
+				
+				#contant span{
+					font-size: 26px; display: block;width: 100%; margin-bottom: 50px; left: 50%; margin-left: 43%;
+				}
+				footer span{
+					margin-left: -18%;
+				}
 			}
 		</style>
 	</head>
@@ -22,20 +130,21 @@
 		<header>
 			<div id="nav">
 				<div id="brand"><a href="#"><img src="image/logo.jpg" alt="logo" title="医叮"/></a></div>	
-			<ul id="navList">
-				<li class="active"><a href="#">首页</a></li>
-				<li><a href="#">产品中心</a></li>
-				<li><a href="#">资讯</a></li>
-				<li><a href="#">关于医叮</a></li>
-				<li class="last"><a href="#">联系我们</a></li>
-				<span id="rollSpan"></span>
-			</ul>
-			<div id="seach">
-				<form action="" method="get">
-					<input id="btnSeach" type="search" name="seach" placeholder="搜索更多" autocomplete="off"/>
-					<input id="btnSub" type="submit" value=""/>
-				</form>
-			</div>
+				<a id="menuBtn" href="#"></a>
+				<ul id="navList">
+					<li class="active"><a href="#">首页</a></li>
+					<li><a href="#">产品中心</a></li>
+					<li><a href="#">资讯</a></li>
+					<li><a href="#">关于医叮</a></li>
+					<li class="last"><a href="#">联系我们</a></li>
+					<span id="rollSpan"></span>
+				</ul>
+				<div id="seach">
+					<form action="" method="get">
+						<input id="btnSeach" type="search" name="seach" placeholder="搜索更多" autocomplete="off"/>
+						<input id="btnSub" type="submit" value=""/>
+					</form>
+				</div>
 			</div>
 		</header>
 		
