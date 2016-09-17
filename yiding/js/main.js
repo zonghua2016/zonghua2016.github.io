@@ -197,4 +197,21 @@ $(function(){
 		}
 		boff=!boff;
 	})
+	/*滚动窗口*/
+	var $header=$('header').eq(0);
+	$(document).scroll(function(){
+		if($(document).scrollTop()>=100){
+			/*固定导航条*/
+			$header.css({'position':'fixed','top':0,'z-index':99999,'opacity':1,'width':'100%'})
+		}
+		if($(document).scrollTop()>=500){
+			$('#goTop').css('display','block');
+		}else{
+			$('#goTop').css('display','none');
+		}
+	})
+	/*回顶部*/
+	$('#goTop').click(function(){
+		$('html,body').animate({'scrollTop':0},500);
+	})
 })

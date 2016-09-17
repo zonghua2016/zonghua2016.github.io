@@ -365,3 +365,12 @@ footer span{
 
 
 /*尾部结束*/
+/*回顶部*/
+#goTop{
+	width: 65px; height: 65px; cursor: pointer; display: none;
+	background: url(../image/goTop.png) no-repeat 0 0;
+	position: fixed; bottom: 50px; right: 50px;
+}
+#goTop:hover{
+	background: url(../image/goTop.png) no-repeat -65px 0;
+}
