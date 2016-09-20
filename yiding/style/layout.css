@@ -65,13 +65,13 @@ header div{
 #seach #btnSeach{
 	background: rgba(0,0,0,0);
 	width: 200px;height: 45px;
-	border: medium none;
+	border: medium none; outline: none;
 	position: absolute; left: 10px;
 }
 #btnSub{
 	width: 45px; height: 45px;
 	background: rgba(0,0,0,0);
-	border: medium none;
+	border: medium none; outline: none;
 	position: absolute; right: 0;
 	cursor: pointer;
 }

@@ -4,7 +4,8 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1" >
 		<title>医叮</title>
-		<link rel="stylesheet" href="style/layout.css" />
+		<link rel="stylesheet" type="text/css" href="style/layout.css" />
+		<link rel="stylesheet" type="text/css" href="style/waves.min.css"/>
 		<style>
 			@media only screen and (min-width:1200px) and (max-width:1486px ){
 				#navList li{
@@ -258,5 +259,11 @@
 		<script src="js/html5shiv.js"></script>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/main.js"></script>
+		<script src="js/waves.min.js"></script>
+		<script type="text/javascript">
+			Waves.init();
+			Waves.attach('#navList li',['waves-button']);
+			Waves.attach('#seach',['waves-block']);
+		</script>
 	</body>
 </html>
