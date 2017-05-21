@@ -67,7 +67,7 @@ function testTel(){
 				$('.telErr').hide();
 			},2000);
 		}else{
-			alert('你以为输入正确就ok？，呵呵。。。sorry');
+			alert('你以为输入正确就ok？，呵呵。。。sorry 并没有写后台');
 		}
 }
 
