@@ -58,7 +58,11 @@ $(function() {
 		},500);
 //		clearInterval(maskTimer);
 		$(window).scrollTop(80);
-		testTel();
+		if(!$('.submit,.getMsgCode').hasClass('active')){
+			testTel();
+		}else{
+			return false;
+		}
 	})
 });
 function testTel(){
