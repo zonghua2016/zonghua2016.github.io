@@ -59,12 +59,15 @@ $(function() {
 });
 function testTel(){
 	var $tel = $('.mobileLogin .mobileNum input');
-	var re = /((\d{11})|^((\d{7,8})|(\d{4}|\d{3})-(\d{7,8})|(\d{4}|\d{3})-(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1})|(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1}))$)/;
-	if(!$tel.val()&&!re.test($tel.val())){
+	var re = /^0?1[3|4|5|8][0-9]\d{8}$/;
+	console.log(!re.test($tel.val()))
+	if(!$tel.val()||!re.test($tel.val())){
 			$('.telErr').show();
 			setTimeout(function(){
 				$('.telErr').hide();
 			},2000);
+		}else{
+			alert('你以为输入正确就ok？，呵呵。。。sorry');
 		}
 }
 
