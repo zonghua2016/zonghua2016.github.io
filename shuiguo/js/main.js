@@ -45,7 +45,11 @@ $(function() {
 	})
 	//获取验证码
 	$('.submit,.getMsgCode').click(function(){
-		testTel();
+		if(!$(this).hasClass('active')){
+			testTel();
+		}else{
+			return false;
+		}
 	});
 	$('.buyBtn').click(function(){
 		$('.proMask').removeClass('zoomIn').addClass('zoomOut').hide();
@@ -67,7 +71,18 @@ function testTel(){
 				$('.telErr').hide();
 			},2000);
 		}else{
-			alert('你以为输入正确就ok？，呵呵。。。sorry 并没有写后台');
+			var i = 60;
+			var getCodeTimer;
+			getCodeTimer = setInterval(function(){
+				i--;
+				if(i>=1){
+					$('.getMsgCode').addClass('active').text(i+'秒后重发');
+				}else{
+					clearInterval(getCodeTimer);
+					$('.getMsgCode').removeClass('active').text('获取验证码');
+				}
+			},1000);
+//			clearInterval(getCodeTimer);
 		}
 }
 
