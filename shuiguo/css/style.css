@@ -215,7 +215,7 @@
 .contant{
 	width: 100%;
 	text-align: center;
-	margin: 20px auto;
+	margin: 0 auto 26px;
 	font-size: 24px;
 }
 ::-webkit-input-placeholder { /* WebKit browsers */
