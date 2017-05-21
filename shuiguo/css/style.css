@@ -65,6 +65,9 @@
 	color: #FFFFFF;
 	font-size: 22px;
 }
+.mobileLogin .msgCode .getMsgCode.active{
+	opacity: .5;
+}
 .mobileLogin form input.submit{
 	display: block;
 	width: 100%;
