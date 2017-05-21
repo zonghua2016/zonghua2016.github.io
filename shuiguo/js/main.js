@@ -26,24 +26,47 @@ $(function() {
 		$tel.val('');
 		$(this).hide();
 	})
+//	显示弹层
 	var maskTimer;
 	$proLi.click(function(){
 		$('.mask').removeClass('fadeOutUp').addClass('fadeInDown').show();
 		maskTimer = setTimeout(function(){
 			$('.proMask').removeClass('zoomOut').addClass('zoomIn').show();
 		},500);
+//		一定要记得清楚定时器
+//		clearInterval(maskTimer);
 	})
 	$('.mask').click(function(){
 		$('.proMask').removeClass('zoomIn').addClass('zoomOut').hide();
 		maskTimer = setTimeout(function(){
 			$('.mask').removeClass('fadeInDown').addClass('fadeOutUp').hide();
 		},500);
+//		clearInterval(maskTimer);
 	})
-	
-	
+	//获取验证码
+	$('.submit,.getMsgCode').click(function(){
+		testTel();
+	});
+	$('.buyBtn').click(function(){
+		$('.proMask').removeClass('zoomIn').addClass('zoomOut').hide();
+		maskTimer = setTimeout(function(){
+			$('.mask').removeClass('fadeInDown').addClass('fadeOutUp').hide();
+		},500);
+//		clearInterval(maskTimer);
+		$(window).scrollTop(80);
+		testTel();
+	})
 });
-
-
+function testTel(){
+	var $tel = $('.mobileLogin .mobileNum input');
+	var re = /((\d{11})|^((\d{7,8})|(\d{4}|\d{3})-(\d{7,8})|(\d{4}|\d{3})-(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1})|(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1}))$)/;
+	if(!$tel.val()&&!re.test($tel.val())){
+			$('.telErr').show();
+			setTimeout(function(){
+				$('.telErr').hide();
+			},2000);
+		}
+}
 
 
 
