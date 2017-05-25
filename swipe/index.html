@@ -1,0 +1,83 @@
+<!DOCTYPE HTML> 
+<html>
+<head>
+<title>Swipe 2</title>
+<meta http-equiv="X-UA-Compatible" content="IE=8">
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/> 
+<link href='style.css' rel='stylesheet'/>
+<style>
+
+/* Swipe 2 required styles */
+
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > div {
+  float:left;
+  width:100%;
+  position: relative;
+}
+
+/* END required styles */
+
+</style>
+
+</head>
+<body>
+
+
+
+
+<div id='mySwipe' style='max-width:500px;margin:0 auto' class='swipe'>
+  <div class='swipe-wrap'>
+    <div><img src="imgs/1.png"/></div>
+    <div><img src="imgs/2.jpg"/></div>
+    <div><img src="imgs/3.png"/></div>
+    <div><img src="imgs/4.jpg"/></div>
+  </div>
+</div>
+
+
+
+<div style='text-align:center;padding-top:20px;'>
+  
+  <button onclick='mySwipe.prev()'>prev</button> 
+  <button onclick='mySwipe.next()'>next</button>
+
+</div>
+
+
+
+
+<script src="jquery-1.11.3.min.js"></script>
+<script src='swipe.js'></script>
+<script>
+
+// pure JS
+//var elem = document.getElementById('mySwipe');
+//window.mySwipe = Swipe(elem, {
+// startSlide: 0,
+// auto: 3000,
+// continuous: true,
+// disableScroll: true,
+// stopPropagation: true,
+// callback: function(index, element) {},
+// transitionEnd: function(index, element) {}
+//});
+
+// with jQuery
+   window.mySwipe = $('#mySwipe').Swipe().data('Swipe');
+	
+//	$(window).resize(function(){
+		var w = $('#mySwipe').width();
+		h = w * 2 /3;
+		$('#mySwipe').css('height',h)
+//	});
+	
+</script>
