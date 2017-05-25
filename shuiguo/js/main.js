@@ -1,4 +1,4 @@
-$(function() {
+﻿$(function() {
 	if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
 	   //alert(navigator.userAgent); 
 	   
@@ -64,6 +64,9 @@ $(function() {
 			return false;
 		}
 	})
+	var w = $('video').width();
+		h = w * 9 /16;
+		$('video').css('height',h);
 });
 function testTel(){
 	var $tel = $('.mobileLogin .mobileNum input');
