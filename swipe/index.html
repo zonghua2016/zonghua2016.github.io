@@ -6,7 +6,11 @@
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/> 
 <link href='style.css' rel='stylesheet'/>
 <style>
-
+*{
+	margin: 0; padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
 /* Swipe 2 required styles */
 
 .swipe {
@@ -26,6 +30,46 @@
 
 /* END required styles */
 
+/*point styles*/
+
+.point{
+	position: absolute;
+	width: 80px; height: 20px;
+	border-radius: 15px;
+	background: rgba(0,0,0,.3);
+	bottom: 20px;
+	left: 50%;
+	margin-left: -40px;
+	text-align: center;
+	line-height: 20px;
+}
+.point li{
+	display: inline-block;
+	width: 10px; height: 10px;
+	border-radius: 50%;
+	background: #FFFFFF;
+	cursor: pointer;
+}
+.point li:hover{
+	background: rgba(255,255,255,.6);
+}
+.point li.cur{
+	background: rgba(255,255,255,.6);
+}
+/*END point styles*/
+
+/* 清理浮动 */
+.clearfix:after {
+visibility:hidden;
+display:block;
+font-size:0;
+content:" ";
+clear:both;
+height:0;
+}
+.clearfix {
+zoom:1; /* for IE6 IE7 */
+}
 </style>
 
 </head>
@@ -41,6 +85,12 @@
     <div><img src="imgs/3.png"/></div>
     <div><img src="imgs/4.jpg"/></div>
   </div>
+  <ul class="point clearfix">
+  	<li class="cur"></li>
+  	<li></li>
+  	<li></li>
+  	<li></li>
+  </ul>
 </div>
 
 
@@ -67,10 +117,14 @@ window.mySwipe = Swipe(elem, {
    continuous: true,
    disableScroll: true,
    stopPropagation: true,
-   callback: function(index, element) {},
+   callback: function(index, element) {
+   	$('.point li').eq(index).addClass('cur').siblings().removeClass('cur');
+   },
    transitionEnd: function(index, element) {}
 });
-
+$('.point li').click(function(){
+	mySwipe.slide($(this).index());
+})
 // with jQuery
 // window.mySwipe = $('#mySwipe').Swipe().data('Swipe');
 	
