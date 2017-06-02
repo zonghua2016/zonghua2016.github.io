@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>生成属于你自己的二维码</title>
+    <style type="text/css">
+    	*{
+    		margin: 0; padding: 0;
+    	}
+    	textarea{
+    		resize: none;
+    	}	
+    </style>
+    <script src="jquery-1.11.3.min.js"></script>
+    <script src="utf.js"></script>
+    <script src="jquery.qrcode.js"></script>
+</head>
+<body>
+	<span>您的二维码：</span>
+    <div id="qrcode"></div>
+    <hr />
+    <div class="box">
+    	<p>
+    		<span>内容：</span><span><textarea rows="10" cols="40"></textarea></span>
+    	</p>
+    	<p>
+    		<span>宽：</span><span><input type="text" placeholder="100" class="w" /></span>
+    		<span>X</span>
+    		<span>高：</span><span><input type="text" placeholder="100" class="h" /></span>
+    	</p>
+    	<p><span><input type="button" value="点击生成二维码" class="codeBtn" /></span></p>
+    </div>
+</body>
+<script>
+    $(document).ready(function(){
+//      $('#qrcode').qrcode({
+//          text	: "生成属于你自己的二维码",
+//          width : "200",
+//          height : "200",
+//          render   : "canvas",//设置渲染方式  
+//			width       : 256,     //设置宽度  
+//			height      : 256,     //设置高度  
+//			typeNumber  : -1,      //计算模式  
+//			correctLevel    : QRErrorCorrectLevel.H,//纠错等级  
+//			background      : "#ffffff",//背景颜色  
+//			foreground      : "#000000" //前景颜色 
+//      });
+		
+		$('.codeBtn').click(function(){
+			$('#qrcode').html('');
+			var args = {
+				text: $('textarea').val(),
+				width: $('.w').val(),
+				height: $('.h').val()
+			}
+//			alert($('bg').val())
+			$('#qrcode').qrcode(args);
+		})
+		
+		
+    });
+</script>
+</html>
